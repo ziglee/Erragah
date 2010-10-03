@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+    	<div id="header">
+    		<div id="companyLogoHeader"></div><div id="rightHeaderImage"></div> 
+    	</div>
+    	
+		<div id="option-menu-bar"> 
+			<ul id="option-menu"> 
+		    	<li><a href="/erragah">Bem-vindo <span wicket:id="user">[user]</span></a></li> 
+			 	<li><a href="logout" target="rightMenu">Logout</a></li> 
+			</ul> 
+		</div>
+		 
+    	<div id="top-menu">
+    		<ul id="nav" class="menu_1">
+    			<li id="admin">
+    				<a><span>ADMIN</span></a>
+    				<ul class="menu_2">
+    					<li>
+    						<a><span>INFO EMPRESA</span></a>
+    						<ul class="menu_3">
+    							<li>
+    								<a wicket:id="generalLink"><span>GERAL</span></a>
+    							</li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</li>
+    		</ul>
+    	</div>
+    	
+    	<div id="main-content"><wicket:child /></div>
+    	
+        <div id="main-footer"></div>
+    </body>
+</html>
