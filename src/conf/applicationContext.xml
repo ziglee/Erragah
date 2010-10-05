@@ -19,37 +19,13 @@
 		</property>
 	</bean>
 	
+	<!-- 
 	<import resource="classpath:dataSource.xml" />
-
-	<!-- JPA EntityManagerFactory -->
-	<bean id="entityManagerFactory"
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
-		p:dataSource-ref="dataSource">
-		<property name="jpaVendorAdapter">
-			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-				<property name="showSql" value="true" />
-				<property name="generateDdl" value="true" />
-				<property name="databasePlatform" value="${hibernate.dialect}" />
-			</bean>
-		</property>
-	</bean>
-
-	<!-- Transaction manager for a single JPA EntityManagerFactory -->
-	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
-		p:entityManagerFactory-ref="entityManagerFactory" />
-
-	<tx:annotation-driven />
-	
-	<bean id="metadataUtil" class="com.trg.search.jpa.hibernate.HibernateMetadataUtil"
-    factory-method="getInstanceForEntityManagerFactory">
-    <constructor-arg ref="entityManagerFactory" />
+  <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="dataSource"/>
   </bean>
-  <bean id="searchProcessor" class="com.trg.search.jpa.JPASearchProcessor">
-    <constructor-arg ref="metadataUtil" />
-  </bean>
+  -->
   
-  <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
-	
 	<!-- setup wicket application -->
 	<bean id="wicketApplication" class="net.cassiolandim.erragah.WicketApplication" />
 </beans>

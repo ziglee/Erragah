@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -25,13 +24,13 @@
 			<email>ziglee at gmail dot com</email>
 		</developer>
 	</developers>
-	
+
 	<distributionManagement>
-	    <snapshotRepository>
-	        <id>Cassio-PC</id>
-	        <name>Cassio-PC-snapshots</name>
-	        <url>http://localhost:8081/artifactory/libs-snapshots-local</url>
-	    </snapshotRepository>
+		<snapshotRepository>
+			<id>Cassio-PC</id>
+			<name>Cassio-PC-snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshots-local</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<properties>
@@ -48,18 +47,18 @@
 			<artifactId>scala-library</artifactId>
 			<version>${scala.version}</version>
 		</dependency>
-     
-    <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-      <version>3.2.1</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-beanutils</groupId>
-      <artifactId>commons-beanutils</artifactId>
-      <version>1.6</version>
-    </dependency>
-		
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.6</version>
+		</dependency>
+
 		<!--  WICKET DEPENDENCIES -->
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
@@ -142,23 +141,35 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-    <!-- PERSISTENCE TIER -->
+		<!-- PERSISTENCE TIER -->
     <dependency>
-	    <groupId>org.mybatis</groupId>
-	    <artifactId>mybatis</artifactId>
-	    <version>3.0.2</version>
-	  </dependency>
-	  <dependency>
-	    <groupId>org.mybatis</groupId>
-	    <artifactId>mybatis-spring</artifactId>
-	    <version>1.0.0-RC1</version>
-	  </dependency>
+      <groupId>org.squeryl</groupId>
+      <artifactId>squeryl_2.8.0</artifactId>
+      <version>0.9.4-RC2</version>
+    </dependency>
+		<dependency>
+	    <groupId>com.h2database</groupId>
+	    <artifactId>h2</artifactId>
+	    <version>1.2.143</version>
+		</dependency>
+		
+    <!-- <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>hsqldb</groupId>
+      <artifactId>hsqldb</artifactId>
+      <version>1.8.0.7</version>
+      <scope>runtime</scope>
+    </dependency> -->
 	</dependencies>
 
 	<build>
 		<sourceDirectory>src/main/scala</sourceDirectory>
-    	<testSourceDirectory>src/test/scala</testSourceDirectory>
-    
+		<testSourceDirectory>src/test/scala</testSourceDirectory>
+
 		<resources>
 			<resource>
 				<filtering>false</filtering>
@@ -167,21 +178,12 @@
 					<include>**</include>
 				</includes>
 			</resource>
-			
+
 			<resource>
 				<filtering>false</filtering>
 				<directory>src/main/resources</directory>
 			</resource>
-			<resource>
-				<filtering>false</filtering>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**</include>
-				</includes>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
+			
 			<resource>
 				<filtering>false</filtering>
 				<directory>src/main/scala</directory>
@@ -193,18 +195,8 @@
 				</excludes>
 			</resource>
 		</resources>
-		
+
 		<testResources>
-			<testResource>
-				<filtering>false</filtering>
-				<directory>src/test/java</directory>
-				<includes>
-					<include>**</include>
-				</includes>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</testResource>
 			<testResource>
 				<filtering>false</filtering>
 				<directory>src/test/scala</directory>
@@ -216,20 +208,20 @@
 				</excludes>
 			</testResource>
 		</testResources>
-		
+
 		<plugins>
 			<plugin>
-        <groupId>org.scala-tools</groupId>
-        <artifactId>maven-scala-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>scala-compile-first</id>
+				<groupId>org.scala-tools</groupId>
+				<artifactId>maven-scala-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>scala-compile-first</id>
 						<phase>process-resources</phase>
 						<goals>
-						  <goal>add-source</goal>
+							<goal>add-source</goal>
 							<goal>compile</goal>
 						</goals>
-					</execution>									
+					</execution>
 					<execution>
 						<id>scala-test-compile</id>
 						<phase>process-test-resources</phase>
@@ -238,7 +230,7 @@
 						</goals>
 					</execution>
 				</executions>
-		    </plugin>
+			</plugin>
 			<plugin>
 				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -252,12 +244,12 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-		    <artifactId>maven-resources-plugin</artifactId>
-		    <configuration>
-			  <encoding>UTF-8</encoding>
-		    </configuration>
-		  </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
@@ -300,44 +292,44 @@
 	<reporting>
 		<plugins>
 			<plugin>
-		       	<groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-project-info-reports-plugin</artifactId>
-		        <version>2.1.2</version>
-		        <reportSets>
-          			<reportSet>
-            			<reports>
-			              	<!-- <report>dependencies</report> -->
-			              	<report>project-team</report>
-			              	<report>mailing-list</report>
-			              	<report>cim</report>
-			              	<report>issue-tracking</report>
-			              	<report>license</report>
-			              	<report>scm</report>
-            			</reports>
-          			</reportSet>
-        		</reportSets>
-      		</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.1.2</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<!-- <report>dependencies</report> -->
+							<report>project-team</report>
+							<report>mailing-list</report>
+							<report>cim</report>
+							<report>issue-tracking</report>
+							<report>license</report>
+							<report>scm</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
 			<plugin>
-	        	<groupId>org.apache.maven.plugins</groupId>
-	        	<artifactId>maven-surefire-plugin</artifactId>
-	      	</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-		          	<suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
-		        	<suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
-		        </configuration>
+					<suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+					<suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-	        	<groupId>org.codehaus.mojo</groupId>
-	        	<artifactId>taglist-maven-plugin</artifactId>
-	        	<version>2.3</version>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>taglist-maven-plugin</artifactId>
+				<version>2.3</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
