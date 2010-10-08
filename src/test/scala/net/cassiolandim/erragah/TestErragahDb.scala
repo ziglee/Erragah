@@ -3,7 +3,7 @@ package net.cassiolandim.erragah
 import org.squeryl.Session
 import org.junit.Test
 import junit.framework.Assert._
-import org.squeryl.adapters._
+import org.squeryl.adapters.PostgreSqlAdapter
 import org.squeryl.PrimitiveTypeMode._
 import org.squeryl.SessionFactory
 
@@ -24,7 +24,6 @@ class TestErragahDb {
 			assertEquals("Nome da compania errado!", "Teste", companyTeste.nome)
 		}
 	}
-	
 
 	def createPostgreSqlTestConnection = {
 		Class.forName("org.postgresql.Driver");
