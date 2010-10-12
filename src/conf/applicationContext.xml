@@ -19,8 +19,22 @@
 		</property>
 	</bean>
 	
-  <bean id="conn" class="net.cassiolandim.erragah.ErragahDbConn" />
-  <bean id="companyService" class="net.cassiolandim.erragah.CompanyService" autowire="byName" />
+  <bean id="sessionFactory" class="net.cassiolandim.erragah.ErragahSessionFactory">
+    <constructor-arg>
+      <value>${jdbc.driver}</value>
+    </constructor-arg>
+    <constructor-arg>
+      <value>${jdbc.url}</value>
+    </constructor-arg>
+    <constructor-arg>
+      <value>${jdbc.username}</value>
+    </constructor-arg>
+    <constructor-arg>
+      <value>${jdbc.password}</value>
+    </constructor-arg>
+  </bean>
+  
+  <bean id="companyService" class="net.cassiolandim.erragah.service.CompanyServiceSqueryl" />
   
 	<!-- setup wicket application -->
 	<bean id="wicketApplication" class="net.cassiolandim.erragah.WicketApplication" >

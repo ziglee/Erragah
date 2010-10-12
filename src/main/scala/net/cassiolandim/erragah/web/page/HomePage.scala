@@ -11,6 +11,6 @@ class HomePage extends TemplatePage {
 	add(new Label("message", getCompany.get.nome ))
 	
 	def getCompany = {
-		getApplication.asInstanceOf[WicketApplication].companyService.select()
+		getApplication.asInstanceOf[WicketApplication].companyService.select(1L)
 	}
 }

@@ -2,11 +2,16 @@ D:\workspaces\galileo\erragah\target\classes;C:\eclipse-3.5\configuration\org.ec
 -------
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\company\GeneralPage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\TemplatePage.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyService.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyService.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahSessionFactory.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahSessionFactory.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\TemplatePage.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyService.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\TestErragahDb.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\TestErragahDb.scala -> D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\TestErragahDb.scala
@@ -14,9 +19,15 @@ D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\T
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\TemplatePage.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\TemplatePage.scala
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\StartJetty.scala -> D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\StartJetty.scala
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyService.scala -> D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala
 -------
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\company\GeneralPage.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\web\page\company\GeneralPage.class
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\WicketApplication.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\WicketApplication.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\service\CompanyServiceSqueryl$$anonfun$select$1.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\service\CompanyServiceSqueryl$$anonfun$insertCompany$1.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyServiceSqueryl.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\service\CompanyServiceSqueryl.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahSessionFactory.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahSessionFactory.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahSessionFactory.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahSessionFactory$$anonfun$1.class
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\HomePage.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\web\page\HomePage.class
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\TestErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\TestErragahDb.class
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\TestErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\TestErragahDb$$anonfun$conectar$1.class
@@ -25,13 +36,9 @@ D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\T
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\web\page\TemplatePage.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\web\page\TemplatePage.class
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\StartJetty.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\StartJetty.class
 D:\workspaces\galileo\erragah\src\test\scala\net\cassiolandim\erragah\StartJetty.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\StartJetty$.class
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\CompanyService$$anonfun$insertCompany$1.class
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\CompanyService$$anonfun$select$1.class
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahDbConn.class
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahDb.class
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\CompanyService.class
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahDbConn$$anonfun$1.class
-D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahDb$.class
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\Company.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahDb$.class
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\Company$.class
 D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\ErragahDb.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\ErragahDbObject.class
+D:\workspaces\galileo\erragah\src\main\scala\net\cassiolandim\erragah\service\CompanyService.scala -> D:\workspaces\galileo\erragah\target\classes\net\cassiolandim\erragah\service\CompanyService.class
