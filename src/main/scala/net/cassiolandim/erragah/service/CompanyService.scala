@@ -2,7 +2,7 @@ package net.cassiolandim.erragah.service
 
 import net.cassiolandim.erragah.Company
 
-trait CompanyService {
+trait CompanyService extends PersistableService[Company]{
   def insertCompany(c : Company)
-  def select(id : Long) : Option[Company]
+  def updateCompany(c : Company)
 }

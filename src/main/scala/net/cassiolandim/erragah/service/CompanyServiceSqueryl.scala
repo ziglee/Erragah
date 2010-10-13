@@ -6,13 +6,19 @@ import net.cassiolandim.erragah.ErragahDb
 
 class CompanyServiceSqueryl extends CompanyService {
   
-  def insertCompany(company : Company) {
+  def insertCompany(c : Company) {
     inTransaction {
-      ErragahDb.companies.insert(company)
+      ErragahDb.companies.insert(c)
     }
   }
   
-  def select(id : Long): Option[Company] = {
+  def updateCompany(c : Company) {
+	  inTransaction {
+      ErragahDb.companies.update(c)
+    }
+  }
+  
+  def find(id : Long): Option[Company] = {
     inTransaction {
       ErragahDb.companies.lookup(id)
     }
